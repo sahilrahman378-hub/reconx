@@ -19,3 +19,4 @@ ReconX is a lightweight, automated reconnaissance tool written in Python. It com
 ```bash
 git clone https://github.com/sahilrahman378-hub/reconx.git
 cd reconx
+#python3 reconx.py -h
