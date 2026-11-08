@@ -64,9 +64,8 @@ def scan_ports(subdomains, original_domain):
 def run_httpx():
     print(f"\n[*] Running HTTPX to find live web servers...")
     # Checking which targets have live web servers (Status 200, 301, etc.)
-    cmd = "httpx -l targets.txt -silent -status-code -title"
+    cmd ="httpx-toolkit -l targets.txt -silent -status-code -title"
     output = run_command(cmd)
-    
     if output:
         print(f"[+] Found live HTTP servers.")
         return output
